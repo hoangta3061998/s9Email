@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkCorrectEmail(email) {
+        regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(.[A-Za-z0-9]+)$/;
+        if (regexp.test(email)) {
+            alert("Valid email");
+        } else {
+            alert("Invalid email");
+        }
+    }
+    var email = "a@gmail.com";
+    var email2 = "ab@yahoo.com";
+    var email3 = "@gmail.com";
+    var email4 = "ab@gmail.";
+    var email5 = "@#abc@gmail.com";
+    checkCorrectEmail(email5);
+</script>
+</body>
+</html>
